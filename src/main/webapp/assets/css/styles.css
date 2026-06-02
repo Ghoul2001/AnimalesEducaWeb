@@ -1,0 +1,121 @@
+:root {
+    --bio-green: #1f6f50;
+    --bio-dark: #0f2f24;
+    --bio-lime: #d6f264;
+    --bio-sand: #fff8e7;
+    --bio-blue: #0f6584;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bio-sand);
+    color: #1d1d1d;
+}
+
+.page-content {
+    padding-top: 76px;
+}
+
+.bg-bio {
+    background: linear-gradient(90deg, var(--bio-dark), var(--bio-green));
+}
+
+.hero-bio {
+    background: radial-gradient(circle at top right, #3dbb81, var(--bio-green) 45%, var(--bio-dark));
+}
+
+.hero-img {
+    max-width: 100%;
+    min-height: 280px;
+}
+
+.card-bio {
+    border: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-bio:hover,
+.card-bio:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2rem rgba(15, 47, 36, 0.2);
+}
+
+.btn-bio {
+    background: var(--bio-green);
+    color: #ffffff;
+    border: 0;
+}
+
+.btn-bio:hover,
+.btn-bio:focus {
+    background: var(--bio-dark);
+    color: #ffffff;
+}
+
+.narrow {
+    max-width: 620px;
+}
+
+.lesson-img {
+    max-width: 320px;
+    width: 100%;
+}
+
+.model-card {
+    width: 100%;
+    height: 360px;
+    background: linear-gradient(160deg, #e6fff3, #dbeafe);
+    border-radius: 1rem;
+    border: 2px solid rgba(31, 111, 80, 0.25);
+}
+
+.footer-bio {
+    background: var(--bio-dark);
+    color: #ffffff;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: #ffffff;
+    color: #000000;
+    padding: 0.8rem;
+    z-index: 9999;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
+
+:focus-visible {
+    outline: 4px solid var(--bio-lime);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        scroll-behavior: auto;
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+.actividad-3d-card {
+    background: linear-gradient(135deg, #ffffff, #e8fff3);
+    border-left: 8px solid var(--bio-green) !important;
+}
+
+.model-card-large {
+    min-height: 420px;
+}
+
+.form-text {
+    color: #4a4a4a;
+}
