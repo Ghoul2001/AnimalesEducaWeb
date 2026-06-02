@@ -40,7 +40,6 @@
                         <li class="nav-item"><a class="nav-link" href="<%=ctx%>/proyeccion3d">Proyeccion 3D</a></li>
                         <li class="nav-item"><a class="nav-link" href="<%=ctx%>/quiz">Quiz</a></li>
                     <% } %>
-                    <li class="nav-item"><span class="badge rounded-pill text-bg-warning ms-lg-2"><%=nombreSesion%></span></li>
                     <li class="nav-item"><a class="btn btn-outline-light ms-lg-2" href="<%=ctx%>/logout">Salir</a></li>
                 <% } %>
             </ul>

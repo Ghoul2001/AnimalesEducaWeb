@@ -5,7 +5,7 @@
         <div class="col-lg-8">
             <span class="badge text-bg-success mb-2">Actividad interactiva</span>
             <h1 class="h2">Proyeccion 3D: observa, compara e identifica</h1>
-            <p class="lead mb-0">Gira los modelos 3D, observa sus estructuras y responde si pertenecen al grupo de vertebrados o invertebrados.</p>
+            <p class="lead mb-0">Compara fotografias reales con modelos 3D de animales. Gira los modelos, observa sus estructuras y responde si pertenecen al grupo de vertebrados o invertebrados.</p>
         </div>
         <div class="col-lg-4 text-lg-end">
             <a class="btn btn-outline-success" href="<%=request.getContextPath()%>/estudiante">Volver al panel estudiante</a>
@@ -23,6 +23,7 @@
         <div class="card-body">
             <h2 id="instrucciones3d" class="h4">Instrucciones de la actividad</h2>
             <ol class="mb-0">
+                <li>Observa primero la fotografia real de referencia.</li>
                 <li>Usa el mouse o el dedo para rotar cada modelo 3D.</li>
                 <li>Acerca o aleja el modelo para observar sus partes principales.</li>
                 <li>En un celular compatible, presiona el icono de realidad aumentada para proyectarlo en tu entorno.</li>
@@ -34,21 +35,23 @@
     <div class="row g-4 mb-4">
         <div class="col-lg-6">
             <article class="card h-100 shadow-sm card-bio">
+                <img src="<%=request.getContextPath()%>/assets/img/animales/pez.jpg" class="card-img-top animal-photo animal-photo-3d" alt="Fotografia real de un pez payaso, ejemplo de vertebrado">
                 <div class="card-body">
-                    <h2 class="h4">Modelo A: Pez</h2>
-                    <p>Representa un animal vertebrado porque posee estructura interna y columna vertebral.</p>
-                    <model-viewer class="model-card model-card-large" src="<%=request.getContextPath()%>/assets/models/pez_vertebrado.glb" alt="Modelo 3D de un pez vertebrado" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
-                    <p class="small text-muted mt-2">Descripcion accesible: pez con cuerpo alargado, aletas y estructura interna propia de un vertebrado.</p>
+                    <h2 class="h4">Modelo A: Pez vertebrado</h2>
+                    <p>Representa un animal vertebrado porque posee estructura interna, craneo y columna vertebral.</p>
+                    <model-viewer class="model-card model-card-large" src="<%=request.getContextPath()%>/assets/models/pez_vertebrado.glb" poster="<%=request.getContextPath()%>/assets/img/animales/pez.jpg" alt="Modelo 3D con apariencia realista de un pez vertebrado" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
+                    <p class="small text-muted mt-2">Descripcion accesible: pez con cuerpo alargado, aletas, ojos, franjas y estructura interna propia de un vertebrado.</p>
                 </div>
             </article>
         </div>
         <div class="col-lg-6">
             <article class="card h-100 shadow-sm card-bio">
+                <img src="<%=request.getContextPath()%>/assets/img/animales/artropodos.jpg" class="card-img-top animal-photo animal-photo-3d" alt="Fotografia real de una mariposa, ejemplo de invertebrado">
                 <div class="card-body">
-                    <h2 class="h4">Modelo B: Mariposa</h2>
+                    <h2 class="h4">Modelo B: Mariposa invertebrada</h2>
                     <p>Representa un animal invertebrado porque no posee columna vertebral y cuenta con exoesqueleto.</p>
-                    <model-viewer class="model-card model-card-large" src="<%=request.getContextPath()%>/assets/models/mariposa_invertebrado.glb" alt="Modelo 3D de una mariposa invertebrada" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
-                    <p class="small text-muted mt-2">Descripcion accesible: mariposa con alas, antenas, cuerpo segmentado y exoesqueleto.</p>
+                    <model-viewer class="model-card model-card-large" src="<%=request.getContextPath()%>/assets/models/mariposa_invertebrado.glb" poster="<%=request.getContextPath()%>/assets/img/animales/artropodos.jpg" alt="Modelo 3D con apariencia realista de una mariposa invertebrada" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
+                    <p class="small text-muted mt-2">Descripcion accesible: mariposa con alas, antenas, patas articuladas, cuerpo segmentado y exoesqueleto.</p>
                 </div>
             </article>
         </div>

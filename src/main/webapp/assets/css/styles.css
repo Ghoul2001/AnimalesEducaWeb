@@ -29,19 +29,33 @@ body {
 }
 
 .hero-img {
+    width: 100%;
     max-width: 100%;
     min-height: 280px;
+    object-fit: cover;
 }
 
 .card-bio {
     border: 0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
 }
 
 .card-bio:hover,
 .card-bio:focus-within {
     transform: translateY(-4px);
     box-shadow: 0 1rem 2rem rgba(15, 47, 36, 0.2);
+}
+
+.animal-photo {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.animal-photo-3d {
+    height: 260px;
 }
 
 .btn-bio {
@@ -60,9 +74,17 @@ body {
     max-width: 620px;
 }
 
-.lesson-img {
-    max-width: 320px;
+.lesson-img,
+.lesson-photo {
+    max-width: 420px;
     width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(15, 47, 36, 0.18);
+}
+
+.lesson-photo {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
 }
 
 .model-card {
@@ -71,6 +93,7 @@ body {
     background: linear-gradient(160deg, #e6fff3, #dbeafe);
     border-radius: 1rem;
     border: 2px solid rgba(31, 111, 80, 0.25);
+    overflow: hidden;
 }
 
 .footer-bio {
@@ -106,7 +129,6 @@ body {
     }
 }
 
-
 .actividad-3d-card {
     background: linear-gradient(135deg, #ffffff, #e8fff3);
     border-left: 8px solid var(--bio-green) !important;
@@ -118,4 +140,53 @@ body {
 
 .form-text {
     color: #4a4a4a;
+}
+
+@media (max-width: 768px) {
+    .animal-photo {
+        height: 210px;
+    }
+
+    .model-card,
+    .model-card-large {
+        height: 330px;
+        min-height: 330px;
+    }
+}
+
+/* Multimedia uniforme por categoría */
+.lesson-hero {
+    background: rgba(255,255,255,.52);
+    border-radius: 24px;
+    padding: 1.2rem;
+}
+.lesson-photo {
+    width: 100%;
+    max-height: 330px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 14px 35px rgba(0,0,0,.12);
+}
+.multimedia-card {
+    border: 0;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #ffffff;
+}
+.multimedia-img {
+    height: 260px;
+    object-fit: cover;
+}
+.multimedia-card .card-body {
+    min-height: 260px;
+}
+.multimedia-card audio {
+    margin-top: 1rem;
+}
+.multimedia-card .model-card {
+    width: 100%;
+    height: 330px;
+    background: linear-gradient(135deg, #e5fff3, #d8edff);
+    border: 2px solid rgba(25,135,84,.25);
+    border-radius: 20px;
 }

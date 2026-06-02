@@ -19,7 +19,7 @@
             <div class="col-lg-8">
                 <span class="badge text-bg-warning mb-2">Nuevo recurso interactivo</span>
                 <h2 id="actividad3dTitulo" class="h4">Actividad de proyeccion 3D</h2>
-                <p class="mb-0">Observa un pez vertebrado y una mariposa invertebrada en 3D, activa realidad aumentada en celular y registra tu observacion para que aparezca en la bitacora del administrador.</p>
+                <p class="mb-0">Observa modelos 3D con apariencia realista de un pez vertebrado y una mariposa invertebrada, activa realidad aumentada en celular y registra tu observacion para que aparezca en la bitacora del administrador.</p>
             </div>
             <div class="col-lg-4 text-lg-end">
                 <a class="btn btn-bio btn-lg" href="<%=request.getContextPath()%>/proyeccion3d">Abrir actividad 3D</a>
@@ -34,7 +34,7 @@
         %>
         <div class="col-md-6 col-lg-4">
             <article class="card h-100 shadow-sm card-bio">
-                <img src="<%=request.getContextPath()%>/<%=c.getImagen()%>" class="card-img-top p-4" alt="Imagen de <%=c.getNombre()%>">
+                <img src="<%=request.getContextPath()%>/<%=c.getImagen()%>" class="card-img-top animal-photo" alt="Imagen de <%=c.getNombre()%>">
                 <div class="card-body d-flex flex-column">
                     <span class="badge text-bg-success align-self-start mb-2"><%=c.getTipo()%></span>
                     <h2 class="h5"><%=c.getNombre()%></h2>

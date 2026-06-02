@@ -8,15 +8,15 @@
 
     <context-param>
         <param-name>jdbc.url</param-name>
-        <param-value>jdbc:postgresql://172.17.42.121:5432/animales_educa_db</param-value>
+        <param-value>jdbc:postgresql://aws-1-us-west-2.pooler.supabase.com:5432/postgres?sslmode=require</param-value>
     </context-param>
     <context-param>
         <param-name>jdbc.user</param-name>
-        <param-value>alumno</param-value>
+        <param-value>postgres.vhzgrehkmykaacpebemh</param-value>
     </context-param>
     <context-param>
         <param-name>jdbc.password</param-name>
-        <param-value>1234</param-value>
+        <param-value>Animales2026#UPS</param-value>
     </context-param>
 
     <welcome-file-list>
